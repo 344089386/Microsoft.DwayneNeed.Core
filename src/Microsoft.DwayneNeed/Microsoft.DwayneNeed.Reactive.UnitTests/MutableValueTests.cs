@@ -12,7 +12,7 @@ namespace Microsoft.DwayneNeed.Reactive.UnitTests
         public void MutableValueConstructorShouldThrowIfValidateValueFails()
         {
             Action constructor = () => { new MutableValue<int>(10, v => v != 10); };
-            constructor.ShouldThrow<InvalidOperationException>();
+            constructor.Should().Throw<InvalidOperationException>();
         }
 
         [TestMethod]
@@ -73,7 +73,7 @@ namespace Microsoft.DwayneNeed.Reactive.UnitTests
             value.Changed.Subscribe((v) => changedValues.Add(v), () => changedCompleted = true);
             
             Action setter = () => value.SetValue(20);
-            setter.ShouldThrow<InvalidOperationException>();
+            setter.Should().Throw<InvalidOperationException>();
 
             value.GetValue().Should().Be(10);
             changedValues.Count.Should().Be(1);

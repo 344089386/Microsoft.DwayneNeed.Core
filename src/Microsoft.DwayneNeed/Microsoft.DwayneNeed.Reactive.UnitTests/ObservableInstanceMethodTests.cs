@@ -20,7 +20,7 @@ namespace Microsoft.DwayneNeed.Reactive.UnitTests
                 BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Static); 
             
             Action action = () => new ObservableInstanceMethod<ExampleClass,Int32>(null, methodInfo);
-            action.ShouldThrow<ArgumentException>();
+            action.Should().Throw<ArgumentException>();
         }
 
         [TestMethod]
@@ -29,7 +29,7 @@ namespace Microsoft.DwayneNeed.Reactive.UnitTests
             var instance = new ExampleClass(0);
 
             Action action = () => new ObservableInstanceMethod<ExampleClass, Int32>(instance, null);
-            action.ShouldThrow<ArgumentException>();
+            action.Should().Throw<ArgumentException>();
         }
 
         [TestMethod]
@@ -41,7 +41,7 @@ namespace Microsoft.DwayneNeed.Reactive.UnitTests
             var instance = new ExampleClass(0);
 
             Action action = () => new ObservableInstanceMethod<ExampleClass, Int32>(instance, methodInfo);
-            action.ShouldThrow<ArgumentException>();
+            action.Should().Throw<ArgumentException>();
         }
 
         [TestMethod]
@@ -53,7 +53,7 @@ namespace Microsoft.DwayneNeed.Reactive.UnitTests
             var instance = new ExampleClass(0);
 
             Action action = () => new ObservableInstanceMethod<ExampleClass, Int32>(instance, methodInfo);
-            action.ShouldThrow<ArgumentException>();
+            action.Should().Throw<ArgumentException>();
         }
 
         [TestMethod]

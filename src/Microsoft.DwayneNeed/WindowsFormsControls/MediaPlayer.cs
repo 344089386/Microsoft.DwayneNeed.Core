@@ -20,12 +20,18 @@ namespace WindowsFormsControls
         {
             get
             {
+#if MEDIA_PLAYER_ENABLED
                 return axWindowsMediaPlayer1.URL;
+#else
+                return string.Empty;
+#endif
             }
 
             set
             {
+#if MEDIA_PLAYER_ENABLED
                 axWindowsMediaPlayer1.URL = value;
+#endif
             }
         }
     }

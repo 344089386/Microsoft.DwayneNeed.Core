@@ -26,6 +26,11 @@ namespace Microsoft.DwayneNeed.Reactive
              this.value = value;
         }
 
+        public void TestMethods()
+        {
+
+        }
+
         public T GetValue()
         {
             return this.value.GetValue();

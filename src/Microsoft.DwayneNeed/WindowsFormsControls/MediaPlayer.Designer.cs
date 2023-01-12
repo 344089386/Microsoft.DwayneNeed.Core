@@ -1,4 +1,6 @@
-﻿namespace WindowsFormsControls
+﻿//#define MEDIA_PLAYER_ENABLED 
+
+namespace WindowsFormsControls
 {
     partial class MediaPlayer
     {
@@ -29,9 +31,13 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MediaPlayer));
-            this.axWindowsMediaPlayer1 = new AxWMPLib.AxWindowsMediaPlayer();
+#if MEDIA_PLAYER_ENABLED
+            this.axWindowsMediaPlayer1 = new WindowsMediaPlayer();
             ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).BeginInit();
+#endif
             this.SuspendLayout();
+#if MEDIA_PLAYER_ENABLED
+
             // 
             // axWindowsMediaPlayer1
             // 
@@ -44,20 +50,25 @@
             this.axWindowsMediaPlayer1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axWindowsMediaPlayer1.OcxState")));
             this.axWindowsMediaPlayer1.Size = new System.Drawing.Size(150, 150);
             this.axWindowsMediaPlayer1.TabIndex = 0;
+#endif
             // 
             // MediaPlayer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.axWindowsMediaPlayer1);
             this.Name = "MediaPlayer";
+#if MEDIA_PLAYER_ENABLED
+            this.Controls.Add(this.axWindowsMediaPlayer1);
             ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).EndInit();
+#endif
             this.ResumeLayout(false);
 
         }
 
-        #endregion
+#endregion
 
-        private AxWMPLib.AxWindowsMediaPlayer axWindowsMediaPlayer1;
+#if MEDIA_PLAYER_ENABLED
+        private WindowsMediaPlayer axWindowsMediaPlayer1;
+#endif
     }
 }

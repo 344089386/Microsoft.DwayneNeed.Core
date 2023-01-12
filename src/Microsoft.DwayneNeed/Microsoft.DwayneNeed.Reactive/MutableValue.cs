@@ -37,8 +37,8 @@ namespace Microsoft.DwayneNeed.Reactive
 
         public void SetValue(T value)
         {
-            dynamic dynamicValue = value;
-            if (dynamicValue != this.value.Value)
+            T dynamicValue = value;
+            if (dynamicValue?.Equals(this.value.Value)! ?? false)
             {
                 this.ValidateValue(value);
                 this.value.OnNext(value);

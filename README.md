@@ -1,9 +1,9 @@
 # Overview
-Microsoft.DwayneNeed is used to resolve WPF's Airspace issues. It is helpful, it used originally in .NetFramework in past. But now, it suppport .NetCore.
+**Microsoft.DwayneNeed** is used to resolve WPF's Airspace issues. It is helpful, it used originally in .NetFramework in past. **But now, it suppport .net core.**
 
 Currently, This version is based on the .net6 version.
 
-Below projects have be migrated to .NetCore.
+**Below projects have be migrated to .net core.** Enjoy it!
  - Microsoft.DwayneNeed
  - Microsoft.DwayneNeed.Win32
  - CustomBitmapDemo

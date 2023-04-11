@@ -4,15 +4,15 @@
         <TargetFramework>net6.0-windows</TargetFramework>
         <Nullable>enable</Nullable>
         <UseWPF>true</UseWPF>
-        
-        <Title>Microsoft.DwayneNeed</Title>
+        <Version>1.0.1</Version>
+        <Title>MahApps.Microsoft.DwayneNeed</Title>
         <Company>Microsoft</Company>
         <Copyright>Copyright © Microsoft 2008</Copyright>
         <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\Microsoft.DwayneNeed.Win32\Microsoft.DwayneNeed.Win32.csproj" />
+      <ProjectReference Include="..\Microsoft.DwayneNeed.Win32\MahApps.Microsoft.DwayneNeed.Win32.csproj" />
     </ItemGroup>
 
 </Project>

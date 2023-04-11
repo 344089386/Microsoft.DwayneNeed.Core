@@ -1,8 +1,9 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
+    <Version>1.0.1</Version>
     <TargetFramework>netstandard2.1</TargetFramework>
-    <Title>Microsoft.DwayneNeed.Win32</Title>
+    <Title>MahApps.Microsoft.DwayneNeed.Win32</Title>
     <Copyright>Copyright ©  2013</Copyright>
   </PropertyGroup>
 

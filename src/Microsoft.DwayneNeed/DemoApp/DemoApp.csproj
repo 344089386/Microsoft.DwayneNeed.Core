@@ -9,7 +9,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\Microsoft.DwayneNeed\Microsoft.DwayneNeed.csproj" />
+      <ProjectReference Include="..\Microsoft.DwayneNeed\MahApps.Microsoft.DwayneNeed.csproj" />
       <ProjectReference Include="..\WindowsFormsControls\WindowsFormsControls.csproj" />
     </ItemGroup>
 

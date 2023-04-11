@@ -7,9 +7,9 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "D2DSamples", "D2DSamples\D2
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Microsoft.DwayneNeed.Reactive", "Microsoft.DwayneNeed.Reactive", "{BAFCCB5D-8065-47AD-BD91-6790B7BE63C3}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.DwayneNeed", "Microsoft.DwayneNeed\Microsoft.DwayneNeed.csproj", "{117143DA-7142-453A-B224-24D33B9B443B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MahApps.Microsoft.DwayneNeed", "Microsoft.DwayneNeed\MahApps.Microsoft.DwayneNeed.csproj", "{117143DA-7142-453A-B224-24D33B9B443B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.DwayneNeed.Win32", "Microsoft.DwayneNeed.Win32\Microsoft.DwayneNeed.Win32.csproj", "{37EBDE91-374A-4EA4-A12C-35DD243C8274}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MahApps.Microsoft.DwayneNeed.Win32", "Microsoft.DwayneNeed.Win32\MahApps.Microsoft.DwayneNeed.Win32.csproj", "{37EBDE91-374A-4EA4-A12C-35DD243C8274}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DemoApp", "DemoApp\DemoApp.csproj", "{BDFD8BFE-9448-48B3-A993-BA5CA8B7BBEE}"
 EndProject
